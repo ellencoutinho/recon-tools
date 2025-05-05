@@ -1,6 +1,7 @@
 import whois
 
-def run_whois(domain):
+def run_whois():
+    domain = input("Insert the domain:")
     info = whois.whois(domain)
     print(f"Domain: {info.domain_name}")
     print(f"Registered by: {info.registrar}")
